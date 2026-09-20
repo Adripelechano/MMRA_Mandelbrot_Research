@@ -36,7 +36,22 @@ where:
 * (S(n)) is the standard deviation of the observations.
 * (H) is the estimated Hurst exponent.
 
-Taking logarithms gives approximately: $\log(R/S) = H\log(n) + C$
+Taking logarithms gives approximately: $\log(R/S) = H\log(n) + C$, allowing (H) to be estimated from the slope of the log-log relationship.
 
+### Current Experiment
 
-allowing (H) to be estimated from the slope of the log-log relationship.
+The current implementation performs two main tests.
+
+1. Random baseline: A series of 1,000 observations is generated from a standard Gaussian distribution (np.random.randn(1000)). This provides a simple baseline for a memoryless process, for which a Hurst exponent around (H=0.5) is expected.
+
+2. Empirical market data: Historical SPY data is downloaded using yfinance.
+
+The analysis:
+
+Retrieves daily closing prices.
+Converts prices into logarithmic returns.
+Estimates the Hurst exponent using R/S analysis.
+Compares the result with the simulated random baseline.
+Visualizes the log-log relationship between window size and rescaled range.
+
+The current empirical sample covers approximately 2023.
