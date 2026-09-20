@@ -53,3 +53,26 @@ Functioning:
   4. Compares the result with the simulated random baseline.
   5. Visualizes the log-log relationship between window size and rescaled range.
 
+## Research objective
+
+The current implementation represents the first step of a broader investigation inspired by Mandelbrot's approach to financial markets.
+
+The goal is to move beyond simply asking whether a market is "random" and instead investigate how financial time series scale across different temporal horizons and statistical regimes.
+
+Therefore, the Hurst exponent provides an initial quantitative framework for this investigation.
+
+
+## Future work
+
+The next stages of the project are supposed to include:
+
+1. Extend the analysis to multiple assets and asset classes.
+2. Implement rolling-window Hurst estimation.
+3. Study the sensitivity of H to sample and window size.
+4. Compare different timeframes.
+5. Compare R/S analysis with alternative Hurst estimators.
+6. Investigate heavy-tailed and multifractal behavior.
+7. Study whether Hurst estimates change across different market regimes.
+8. Determination of H with neural networks.
+   
+These improvements could help characterize different market regimes and statistical properties more accurately, providing a basis for developing more realistic models of financial market dynamics.
