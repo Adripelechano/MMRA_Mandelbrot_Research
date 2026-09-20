@@ -1,6 +1,6 @@
 # MMRA Mandelbrot Reseach
 
-### Summary
+## Summary
 
 This project investigates the long term dependence and scaling properties of financial time series using the estimation of the Hurst exponent.
 
@@ -10,7 +10,7 @@ This repository focuses on one of these concepts: the Hurst exponent, using it a
 
 The objective is not to use the Hurst exponent as a standalone trading signal, but to develop a quantitative framework for understanding the statistical structure of financial markets.
 
-### Motivation
+## Motivation
 
 Classical financial models often rely on assumptions such as independent returns and random-walk behavior. However, as explained above, Mandelbrot's research proposed a different perspective: financial time series can exhibit complex statistical properties that are not fully captured by classical Gaussian models.
 
@@ -24,7 +24,7 @@ The Hurst exponent provides one possible framework for investigating this questi
 
 These interpretations should be treated carefully, since the estimated Hurst exponent can be affected by finite samples, non-stationarity, volatility clustering and the estimation method itself (as explained in some sections of the book by Mandelbrot, obtaining different exponents forthe same market).
 
-### Methodology
+## Methodology
 
 The project implements a Rescaled Range (R/S) analysis to estimate the Hurst exponent.
 
@@ -38,7 +38,7 @@ where:
 
 Taking logarithms gives approximately: $\log(R/S) = H\log(n) + C$, allowing (H) to be estimated from the slope of the log-log relationship.
 
-### Current Experiment
+## Current Experiment
 
 The current implementation performs two main tests:
 
