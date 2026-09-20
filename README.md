@@ -14,7 +14,7 @@ The objective is not to use the Hurst exponent as a standalone trading signal, b
 
 * **README.md** - Project overview, theoretical background, methodology, results, and future research.
 * **requirements.txt** - Python dependencies and environment specifications.
-* **hurst_exponent_analysis.ipynb** - Estimation of the Hurst exponent using R/S analysis.
+* **MMRA_hurst_exponent.ipynb** - Estimation of the Hurst exponent using R/S analysis.
 
 ## Motivation
 
