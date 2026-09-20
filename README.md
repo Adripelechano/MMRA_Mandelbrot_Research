@@ -10,25 +10,15 @@ This repository focuses on one of these concepts: the Hurst exponent, using it a
 
 The objective is not to use the Hurst exponent as a standalone trading signal, but to develop a quantitative framework for understanding the statistical structure of financial markets.
 
-Motivation
+### Motivation
 
-Classical financial models often rely on assumptions such as independent returns and random-walk behavior.
+Classical financial models often rely on assumptions such as independent returns and random-walk behavior. However, as explained above, Mandelbrot's research proposed a different perspective: financial time series can exhibit complex statistical properties that are not fully captured by classical Gaussian models.
 
-Mandelbrot's research proposed a different perspective: financial time series can exhibit complex statistical properties that are not fully captured by classical Gaussian models.
+One of the questions that motivates this project is: Do financial markets exhibit measurable long range dependence and scaling behavior that changes across assets and time periods?
 
-One of the questions that motivates this project is:
+The Hurst exponent provides one possible framework for investigating this question. For a process characterized by a Hurst exponent (H):
 
-Do financial markets exhibit measurable long-range dependence and scaling behavior that changes across assets and time periods?
-
-The Hurst exponent provides one possible framework for investigating this question.
-
-For a process characterized by a Hurst exponent (H):
-
-[
-H \approx 0.5
-]
-
-is commonly associated with behavior consistent with a random walk,
+* $H \approx 0.5$: is commonly associated with behavior consistent with a random walk,
 
 [
 H > 0.5
