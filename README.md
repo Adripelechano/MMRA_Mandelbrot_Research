@@ -10,6 +10,12 @@ This repository focuses on one of these concepts: the Hurst exponent, using it a
 
 The objective is not to use the Hurst exponent as a standalone trading signal, but to develop a quantitative framework for understanding the statistical structure of financial markets.
 
+## Repository structure
+
+* **README.md** - Project overview, theoretical background, methodology, results, and future research.
+* **requirements.txt** - Python dependencies and environment specifications.
+* **hurst_exponent_analysis.ipynb** - Estimation of the Hurst exponent using R/S analysis.
+
 ## Motivation
 
 Classical financial models often rely on assumptions such as independent returns and random-walk behavior. However, as explained above, Mandelbrot's research proposed a different perspective: financial time series can exhibit complex statistical properties that are not fully captured by classical Gaussian models.
