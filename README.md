@@ -40,18 +40,16 @@ Taking logarithms gives approximately: $\log(R/S) = H\log(n) + C$, allowing (H) 
 
 ### Current Experiment
 
-The current implementation performs two main tests.
+The current implementation performs two main tests:
 
 1. Random baseline: A series of 1,000 observations is generated from a standard Gaussian distribution (np.random.randn(1000)). This provides a simple baseline for a memoryless process, for which a Hurst exponent around (H=0.5) is expected.
 
 2. Empirical market data: Historical SPY data is downloaded using yfinance.
 
-The analysis:
+Functioning:
+  1. Retrieves daily closing prices.
+  2. Converts prices into logarithmic returns.
+  3. Estimates the Hurst exponent using R/S analysis.
+  4. Compares the result with the simulated random baseline.
+  5. Visualizes the log-log relationship between window size and rescaled range.
 
-Retrieves daily closing prices.
-Converts prices into logarithmic returns.
-Estimates the Hurst exponent using R/S analysis.
-Compares the result with the simulated random baseline.
-Visualizes the log-log relationship between window size and rescaled range.
-
-The current empirical sample covers approximately 2023.
