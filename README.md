@@ -19,8 +19,8 @@ One of the questions that motivates this project is: Do financial markets exhibi
 The Hurst exponent provides one possible framework for investigating this question. For a process characterized by a Hurst exponent (H):
 
 * $H \approx 0.5$: behavior of a random walk.
-* $H > 0.5$: behavior of persistence.
-* $H > 0.5$: behavior of anti-persistence.
+* $H > 0.5$: behavior of persistence, when a trend continues in the same direction.
+* $H < 0.5$: behavior of anti-persistence, when the market tends to constantly reverse.
 
 These interpretations should be treated carefully, since the estimated Hurst exponent can be affected by finite samples, non-stationarity, volatility clustering and the estimation method itself (as explained in some sections of the book by Mandelbrot, obtaining different exponents forthe same market).
 
