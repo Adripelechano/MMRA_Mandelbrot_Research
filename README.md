@@ -28,21 +28,15 @@ These interpretations should be treated carefully, since the estimated Hurst exp
 
 The project implements a Rescaled Range (R/S) analysis to estimate the Hurst exponent.
 
-The general relationship can be expressed as:
-
-$\frac{R(n)}{S(n)} \propto n^H$
+The general relationship can be expressed as: $\frac{R(n)}{S(n)} \propto n^H$
 
 
 where:
+* (R(n)) is the range of cumulative deviations within a window of size (n).
+* (S(n)) is the standard deviation of the observations.
+* (H) is the estimated Hurst exponent.
 
-(R(n)) is the range of cumulative deviations within a window of size (n).
-(S(n)) is the standard deviation of the observations.
-(H) is the estimated Hurst exponent.
+Taking logarithms gives approximately: $\log(R/S) = H\log(n) + C$
 
-Taking logarithms gives approximately:
-
-[
-\log(R/S) = H\log(n) + C
-]
 
 allowing (H) to be estimated from the slope of the log-log relationship.
