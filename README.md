@@ -18,18 +18,31 @@ One of the questions that motivates this project is: Do financial markets exhibi
 
 The Hurst exponent provides one possible framework for investigating this question. For a process characterized by a Hurst exponent (H):
 
-* $H \approx 0.5$: is commonly associated with behavior consistent with a random walk,
+* $H \approx 0.5$: behavior of a random walk.
+* $H > 0.5$: behavior of persistence.
+* $H > 0.5$: behavior of anti-persistence.
+
+These interpretations should be treated carefully, since the estimated Hurst exponent can be affected by finite samples, non-stationarity, volatility clustering and the estimation method itself (as explained in some sections of the book by Mandelbrot, obtaining different exponents forthe same market).
+
+### Methodology
+
+The project implements a Rescaled Range (R/S) analysis to estimate the Hurst exponent.
+
+The general relationship can be expressed as:
+
+\[\frac{R(n)}{S(n)} \propto n^H\]
+
+
+where:
+
+(R(n)) is the range of cumulative deviations within a window of size (n).
+(S(n)) is the standard deviation of the observations.
+(H) is the estimated Hurst exponent.
+
+Taking logarithms gives approximately:
 
 [
-H > 0.5
+\log(R/S) = H\log(n) + C
 ]
 
-is associated with persistence, while
-
-[
-H < 0.5
-]
-
-is associated with anti-persistence.
-
-These interpretations should be treated carefully, since the estimated Hurst exponent can be affected by finite samples, non-stationarity, volatility clustering, structural breaks, and the estimation method itself.
+allowing (H) to be estimated from the slope of the log-log relationship.
