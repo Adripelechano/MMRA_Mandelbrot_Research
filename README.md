@@ -30,7 +30,7 @@ The project implements a Rescaled Range (R/S) analysis to estimate the Hurst exp
 
 The general relationship can be expressed as:
 
-\[\frac{R(n)}{S(n)} \propto n^H\]
+$\frac{R(n)}{S(n)} \propto n^H$
 
 
 where:
