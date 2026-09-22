@@ -1,4 +1,4 @@
-# MMRA Mandelbrot Reseach
+# MMRA Mandelbrot Research
 
 ## Summary
 
