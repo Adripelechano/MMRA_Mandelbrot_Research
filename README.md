@@ -1,4 +1,4 @@
-# MMRA Mandelbrot Research
+# Multifractal Market Analysis (MMRA)
 
 ## Summary
 
